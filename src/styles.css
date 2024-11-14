@@ -11,6 +11,12 @@ body {
     flex-direction: column;
 }
 
+main {
+    background-color: #f2efed;
+    flex-grow: 1;
+    padding: 3rem;
+}
+
 header {
     background-color: white;
     padding: 1rem 0;
@@ -42,4 +48,23 @@ header {
 .btn-primary:hover {
     background-color: #014E4A;
     border-color: #014E4A;
+}
+
+
+
+
+.donation a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #00825D;
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+    font-size: 1rem;
+}
+
+footer h6 {
+    font-size: 0.8rem;
 }
