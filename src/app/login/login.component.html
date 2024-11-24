@@ -1,1 +1,19 @@
-<p>login works!</p>
+<div class="row">
+    <div class="col-lg-6 col-md-12 img-page mb-4 mb-lg-0 d-none d-md-flex align-items-center justify-content-center">
+        <img src="/assets/images/login.jpg" class="img-fluid img-rounded-10" alt="Login" />
+    </div>
+    <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <!-- Formulário de Login -->
+                    <app-signin *ngIf="showLogin" (swap)="swapShowLogin()"></app-signin>
+
+                    <!-- Formulário de Cadastro -->
+                    <app-signup *ngIf="!showLogin" (swap)="swapShowLogin()"></app-signup>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

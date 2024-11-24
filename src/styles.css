@@ -18,7 +18,6 @@ app-root {
 }
 
 main {
-    background-color: #f2efed;
     flex-grow: 1;
     padding: 3rem;
 }

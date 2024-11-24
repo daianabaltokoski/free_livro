@@ -1,0 +1,39 @@
+<div class="card mt-4 border-0" id="registrationFormContainer">
+    <h2 id="titleLogin">Cadastro</h2>
+    <div class="card-body">
+        <form class="needs-validation" id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="registrationName">Nome</label>
+                <input type="text" class="form-control" id="registrationName" placeholder="Digite seu nome" required />
+                <div class="invalid-feedback">
+                    Por favor, insira seu nome.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="registrationEmail">Email</label>
+                <input type="email" class="form-control" id="registrationEmail" aria-describedby="emailHelp"
+                    placeholder="Digite seu email" required />
+                <div class="invalid-feedback">
+                    Por favor, insira um email válido.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="registrationPassword">Senha</label>
+                <input type="password" class="form-control" id="registrationPassword" placeholder="Digite sua senha"
+                    required />
+                <div class="invalid-feedback">
+                    Por favor, insira uma senha.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Cadastrar
+            </button>
+            <div class="mt-2">
+                <p>
+                    Já tem uma conta?
+                    <a (click)="sendNotification($event)" href="#" id="showLogin">Faça login aqui</a>.
+                </p>
+            </div>
+        </form>
+    </div>
+</div>

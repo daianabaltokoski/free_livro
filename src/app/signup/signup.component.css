@@ -1,0 +1,13 @@
+#registrationFormContainer {
+    margin-top: 2rem;
+}
+
+#registrationForm input,
+#registrationForm textarea {
+    margin-bottom: 2rem;
+}
+
+#titleLogin {
+    padding: 1rem;
+    color: #333;
+}

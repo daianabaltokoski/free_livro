@@ -1,0 +1,33 @@
+<div class="card border-0" id="loginFormContainer">
+    <h2 id="titleLogin">Login</h2>
+    <div class="card-body">
+        <form class="needs-validation" id="loginForm" novalidate>
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
+                    placeholder="Digite seu email" required />
+                <div class="invalid-feedback">
+                    Por favor, insira um email válido.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Senha</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha"
+                    required />
+                <div class="invalid-feedback">
+                    Por favor, insira sua senha.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Entrar
+            </button>
+            <div class="mt-2">
+                <p>
+                    Não tem uma conta?
+                    <a (click)="sendNotification($event)" href="#" id="showCadastro">Cadastre-se
+                        aqui</a>.
+                </p>
+            </div>
+        </form>
+    </div>
+</div>

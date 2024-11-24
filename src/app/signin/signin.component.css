@@ -1,0 +1,9 @@
+#loginForm input,
+#loginForm textarea {
+    margin-bottom: 2rem;
+}
+
+#titleLogin {
+    padding: 1rem;
+    color: #333;
+}
