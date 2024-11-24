@@ -1,3 +1,16 @@
 {
-    "user": []
+  "users": [
+    {
+      "id": "03a1",
+      "name": "es6seutesutse",
+      "email": "nçjçkjçklj@ljhhjhl.vom",
+      "password": "123456"
+    },
+    {
+      "id": "edbb",
+      "name": "es6seutesutse",
+      "email": "nçjçkjçklj@ljhhjhl.vom2",
+      "password": "123456"
+    }
+  ]
 }
