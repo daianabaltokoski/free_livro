@@ -16,17 +16,20 @@ export class SignupComponent {
   email: string = '';
   password: string = '';
   message: string = '';
+  classError: string = '';
 
   constructor(private userService: UserService) { }
 
   async register(event: Event) {
     event.preventDefault();
     console.log(this)
-    this.message = await this.userService.registerUser({
+    const {message, classError} = await this.userService.registerUser({
       name: this.name,
       email: this.email,
       password: this.password,
     });
+    this.message = message;
+    this.classError = classError;
   }
 
   sendNotification(event: Event) {

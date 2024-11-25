@@ -17,7 +17,7 @@
                 <input [(ngModel)]="password" type="password" class="form-control" id="registrationPassword"
                     placeholder="Digite sua senha" required name="password" />
             </div>
-            <div *ngIf="message" class="alert alert-danger" role="alert">{{message}}</div>
+            <div *ngIf="message" class="alert" [ngClass]="classError" role="alert">{{message}}</div>
             <button type="submit" class="btn btn-primary">
                 Cadastrar
             </button>

@@ -23,23 +23,23 @@ export class UserService {
   }
 
   // Cadastrar um novo usuário
-  async registerUser(user: { name: string; email: string; password: string }): Promise<string> {
+  async registerUser(user: { name: string; email: string; password: string }): Promise<{message: string, classError: string}> {
     try {
       const existingUser = await this.findUserByEmail(user.email);
 
       if (existingUser) {
-        return 'Usuário já existe.';
+        return {message: 'Usuário já existe.', classError: 'alert-warning'};
       }
 
       return new Promise((resolve, reject) => {
         this.http.post(this.apiUrl, user).subscribe({
-          next: () => resolve('Usuário cadastrado com sucesso!'),
+          next: () => resolve({message: 'Usuário cadastrado com sucesso!', classError: 'alert-success'}),
           error: (err) => reject('Erro ao registrar usuário.'),
         });
       });
     } catch (error) {
       console.error('Erro ao registrar usuário:', error);
-      return 'Erro ao registrar usuário.';
+      return {message: 'Erro ao registrar usuário.', classError: 'alert-danger'};
     }
   }
 }
