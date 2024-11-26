@@ -23,7 +23,7 @@ export class SignupComponent {
   async register(event: Event) {
     event.preventDefault();
     console.log(this)
-    const {message, classError} = await this.userService.registerUser({
+    const { message, classError } = await this.userService.registerUser({
       name: this.name,
       email: this.email,
       password: this.password,
